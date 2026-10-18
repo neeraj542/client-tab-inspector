@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Client Traffic Inspector",
+  "version": "0.1.5",
+  "description": "Pick any open tab and stream its traffic, storage, and cookie flags to a local dashboard.",
+  "permissions": ["debugger", "tabs", "windows", "storage", "history"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://127.0.0.1:17321/*", "http://localhost:17321/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Client Traffic Inspector",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

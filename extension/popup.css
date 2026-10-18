@@ -1,0 +1,142 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 14px;
+  background: #101418;
+  color: #e7ecf3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+header strong {
+  font-size: 14px;
+}
+
+#pill {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #2c3644;
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: #93a0b3;
+}
+
+#pill.on {
+  color: #101418;
+  background: #3ddc97;
+  border-color: #3ddc97;
+}
+
+#tab, #note, #message {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #93a0b3;
+}
+
+#tab {
+  color: #e7ecf3;
+  word-break: break-all;
+}
+
+button, a, input {
+  font: inherit;
+}
+
+.tab-list {
+  display: grid;
+  gap: 6px;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.tab-list button {
+  width: 100%;
+  border: 1px solid #2c3644;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #2a3340;
+  color: #e7ecf3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.modes {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.modes button, .tab-list button.wide {
+  width: 100%;
+  border: 1px solid #2c3644;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #2a3340;
+  color: #e7ecf3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.modes button.on, .tab-list button.on {
+  background: #3ddc97;
+  color: #101418;
+  border-color: #3ddc97;
+}
+
+.tab-list button:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.tab-list strong, .tab-list small {
+  display: block;
+}
+
+.tab-list small {
+  font-weight: 400;
+  opacity: 0.75;
+  word-break: break-all;
+}
+
+button.secondary {
+  background: #2a3340;
+  color: #e7ecf3;
+}
+
+#message {
+  min-height: 1.2em;
+  color: #e2b15c;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 11px;
+  color: #93a0b3;
+}
+
+input {
+  border: 1px solid #2c3644;
+  background: #0b0e13;
+  color: #e7ecf3;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+a {
+  display: block;
+  margin-top: 8px;
+  color: #79b8ff;
+  font-size: 12px;
+}

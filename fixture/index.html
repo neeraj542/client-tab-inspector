@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BadBank Staging</title>
+    <link rel="stylesheet" href="/fixture/app.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">BadBank</p>
+        <h1>Accounts</h1>
+      </div>
+      <span>Staging</span>
+    </header>
+    <section class="balance">
+      <p>Available</p>
+      <strong>$24,580.12</strong>
+    </section>
+    <section>
+      <div class="row">
+        <h2>Recent activity</h2>
+        <button id="refresh" type="button">Refresh activity</button>
+      </div>
+      <ul id="rows"></ul>
+      <p id="status">Loading activity…</p>
+    </section>
+    <script src="/fixture/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client Traffic Inspector</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <strong>Inspector</strong>
+      <span id="pill">Choose</span>
+    </header>
+    <p id="note">Choose how this extension watches. The dashboard follows that choice. It does not list every tab until you do.</p>
+    <div id="modes" class="modes" role="group" aria-label="Watch mode">
+      <button type="button" id="mode-one">One tab at a time</button>
+      <button type="button" id="mode-all">All open tabs</button>
+    </div>
+    <div id="tabs" class="tab-list" hidden></div>
+    <p id="message" role="status"></p>
+    <label>
+      Pairing token
+      <input id="token" autocomplete="off" spellcheck="false" />
+    </label>
+    <a id="dashboard" href="http://127.0.0.1:17321" target="_blank" rel="noreferrer">Open dashboard</a>
+    <script src="popup.js"></script>
+  </body>
+</html>
