@@ -2,8 +2,7 @@
 
 A local tool for one attached browser tab. It records the calls, storage, and cookie flags that backend APM does not see, then writes a security and performance score on the laptop. Nothing is uploaded.
 
-<img width="2936" height="1760" alt="image" src="https://github.com/user-attachments/assets/5b0bdf0d-3212-4d88-8464-7e7f16b86a7a" />
-
+<img width="1440" height="1000" alt="image" src="https://github.com/user-attachments/assets/67d2ec4a-36db-43cc-91d0-e42d9af14435" />
 
 ## Five-minute start
 
